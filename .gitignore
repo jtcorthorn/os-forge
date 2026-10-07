@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+desktop.ini
+# Generated recipient evidence belongs outside this public repository.
+_extracted/
+_archive/
+/_inbox/
+instance.json
+source_inventory*.csv
+relocation*.json
+relocation*.csv
