@@ -23,7 +23,7 @@ Necesitas un agente con acceso autorizado a tu carpeta y Python 3.10+. Consulta 
 - Conocimiento con enlaces y localizadores de sus fuentes; búsqueda local.
 - Un fleet personal con seis roles generales y especialistas por compañía cuando haya un trabajo concreto para ellos.
 - Fichas de agentes con alcance, entradas, salidas, modelo/capacidad requerida, handoffs y estado de activación.
-- Una biblioteca de 17 métodos portables, incluido Agent Fleet, y una cobertura clara de lo pendiente.
+- Una biblioteca de 19 métodos portables, incluido Agent Fleet, y una cobertura clara de lo pendiente.
 
 Un fleet puede usarse con un asistente o varios agentes si la plataforma lo permite. Las fichas preparadas no arrancan procesos autónomos. Fotos catalogadas no equivalen a fotos interpretadas; extraer cifras no confirma conciliación. Publicar, enviar, pagar, conectar cuentas o activar automatizaciones requiere su alcance propio.
 

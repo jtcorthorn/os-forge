@@ -14,6 +14,8 @@ Status: packaged on 2026-10-03; not installed or runtime verified. These are met
 | Pressure-test a consequential decision | [Decision council](decision-council/SKILL.md) |
 | Match an author's voice or explain technical work | [Writing calibration](writing-calibration/SKILL.md), [Explain clearly](explain-clearly/SKILL.md) |
 | Capture knowledge or hand off work | [Knowledge capture](knowledge-capture/SKILL.md), [Task checkpoint](task-checkpoint/SKILL.md) |
+| Read unfamiliar formats or preserve extraction coverage | [Document access](document-access/SKILL.md) |
+| Discover and operate authorized ongoing improvement | [Continuous improvement](continuous-improvement/SKILL.md) |
 | Improve a skill or maintain an OS | [Skill improvement](skill-improvement/SKILL.md), [OS maintenance](os-maintenance/SKILL.md) |
 
 ## Runtime dependencies

@@ -13,3 +13,14 @@ Append its _meta/BITACORA.md; checkpoints stay in that domain.
 ## Limits
 No messaging, purchases, filings, sharing, account connection or permission changes without authority.
 Role names grant no autonomy. Report unavailable tools accurately.
+
+## Skill routes
+Read only the entry relevant to the task under `00_System/Skills/`.
+
+| Task | Method |
+|---|---|
+| Unfamiliar or lossy document access | document-access |
+| Source-based research | evidence-research |
+| Internet retrieval | agent-reach |
+
+A route is not installation, authority or proof of runtime execution. Preserve owner gates.

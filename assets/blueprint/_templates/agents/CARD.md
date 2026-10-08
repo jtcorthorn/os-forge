@@ -19,3 +19,6 @@ Deliverable, source locators and acceptance evidence.
 Upstream/downstream roles and exact return channel/artifact.
 Model/executor policy: required capability; selected available model only when verified.
 Runtime record: host, date, probe/output path and known limitations.
+
+## Required skill selection
+List task -> canonical skill/method -> host/tool dependency -> acceptance check. Require only the applicable route, preserve brand/voice and access boundaries, and distinguish prepared sources from installed and tested runtime capability.
