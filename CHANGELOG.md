@@ -4,6 +4,10 @@ Only verified, reusable product changes belong here. Repository changes do not i
 
 ## 2026-10-08
 
+- Documented verified hosted-task binding when optional run metadata is absent, with fresh controller/account checks and separate source-only, no-op and full-cycle acceptance.
+- Added full destination-ancestry verification, scoped stray-folder detection and receipt reconciliation before retrying preserved duplicates.
+- Clarified original-byte skill installation, host parser dependencies and suppression of temporary download credentials in terminal output.
+
 - Added document-access routing across text, Office, PDF, image and media formats, with original-byte provenance, format-specific editing and explicit unsupported/OCR dependencies.
 - Added continuous-improvement methodology and deterministic discovery for domain proposals that never entered a central ticket queue. Collection failures and missing canaries remain incomplete coverage.
 - Added task-specific skill routes to the six neutral role cards and new-card template, preserving owner gates and prepared/runtime distinctions.

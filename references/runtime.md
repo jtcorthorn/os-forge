@@ -14,3 +14,12 @@ Discover the actual executable; syntax depends on the host. Do not assume an acc
 Keep the whole skill folder together. For Codex, place it in the configured skills directory. For another file-capable agent, provide SKILL.md explicitly and follow the host's own discovery mechanism. Nested blueprint skills are methods available by reading their entries; automatic discovery is unverified until tested on that host.
 
 Fleet role cards describe responsibility and scoped behavior. Real delegation requires an available executor and authorization. One assistant can work sequentially through roles; it must not claim those are independently running agents. Activation evidence, model choice, mounts and access tests stay in the recipient OS.
+
+
+## Hosted maintenance and destination checks
+
+Some hosted schedulers omit a worker ID from run context. Require the exact owner-approved configured ID, a fresh unique enabled cloud attachment, matching controller and account, and the same saved responsibility. If host-supplied identity is present, it must match. Missing optional metadata alone should not block an otherwise verified binding; absent or mismatched authority still stops work. Verify actual source access and immutable result readback after correcting startup. A source-only run or an already-synchronized publication does not establish a successful repair and changed-publication cycle.
+
+Before filing through a connector, resolve the full destination ancestry and parent identity against the owning map, then verify them again after writing. Similar folder names under different roots are different destinations. A specifically authorized stray-folder sensor may inspect only that branch within existing budgets. Hash every candidate against the canonical original and preserve unique or conflicting files. Retain exact duplicates under the owning recovery rules; never expand a canonical-root executor to move external paths automatically. Reconcile prior receipts and the current destination before retrying, including preserved recovery folders.
+
+Use original file bytes for governed methods and skill packages. Extracted Markdown may remove frontmatter or alter tables. Installed instructions, parser binaries, host discovery and actual task use are separate dependencies. Download signed files with shell tracing and terminal echo disabled; keep temporary credentials out of tool output and evidence.
