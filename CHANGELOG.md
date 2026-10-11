@@ -2,6 +2,10 @@
 
 Only verified, reusable product changes belong here. Repository changes do not imply installation or activation in an owner's existing OS.
 
+## 2026-10-11
+
+- Clarified how small and substantial verified improvements, including fleet evolution notes, enter the existing neutral package: preserve private evidence at its source, test the portable behavior, then build a publication snapshot with a concise changelog. Unverified or owner-specific changes stay with their owner.
+
 ## 2026-10-08
 
 - Documented verified hosted-task binding when optional run metadata is absent, with fresh controller/account checks and separate source-only, no-op and full-cycle acceptance.
