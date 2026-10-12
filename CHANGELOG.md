@@ -2,6 +2,10 @@
 
 Only verified, reusable product changes belong here. Repository changes do not imply installation or activation in an owner's existing OS.
 
+## 2026-10-12
+
+- Added dependency-pin reconciliation guidance after an observed hosted integrity stop: preserve the hash guard, check the approved change and affected deployment references, then distinguish a verified reference repair from an actual hosted retry.
+
 ## 2026-10-11
 
 - Clarified how small and substantial verified improvements, including fleet evolution notes, enter the existing neutral package: preserve private evidence at its source, test the portable behavior, then build a publication snapshot with a concise changelog. Unverified or owner-specific changes stay with their owner.
