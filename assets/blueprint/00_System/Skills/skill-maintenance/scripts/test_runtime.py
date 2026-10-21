@@ -3,6 +3,7 @@ import io
 import json
 from pathlib import Path
 import tempfile
+import subprocess
 import unittest
 from unittest.mock import patch
 import runtime
@@ -70,6 +71,13 @@ class RuntimeChecks(unittest.TestCase):
         api=runtime.GitHub()
         with patch.object(api,'get',return_value={'truncated':True,'tree':[]}):
             with self.assertRaises(ValueError):api.tree('example/skills','a'*40,'skills/demo')
+    def test_installed_but_unauthenticated_gh_uses_public_https(self):
+        api=runtime.GitHub()
+        with patch.object(runtime.shutil,'which',return_value='gh'), \
+             patch.object(runtime.subprocess,'run',return_value=subprocess.CompletedProcess([],1,b'',b'not authenticated')), \
+             patch.object(runtime.urllib.request,'urlopen',return_value=io.BytesIO(b'{"sha":"actual-public-response"}')) as public_read:
+            self.assertEqual(api.get('repos/example/skills/commits/HEAD')['sha'],'actual-public-response')
+            self.assertEqual(public_read.call_count,1)
     def test_explicit_output_never_overwrites(self):
         output=self.root/'saved.json';self.call('inspect','--output',str(output));before=output.read_bytes()
         with self.assertRaises(FileExistsError):self.call('inspect','--output',str(output))

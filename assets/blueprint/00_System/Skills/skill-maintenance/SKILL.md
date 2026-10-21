@@ -1,7 +1,7 @@
 ---
 name: skill-maintenance
 description: Inspect skill version drift and record actual skill reads, attested applications and checked properties on the current host. Use for skill update checks or runtime adoption verification, not ordinary business work or automatic retirement.
-version: 1.0.0
+version: 1.0.1
 ---
 
 # Skill maintenance

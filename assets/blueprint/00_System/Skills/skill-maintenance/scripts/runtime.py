@@ -70,13 +70,20 @@ class GitHub:
         remaining=self.deadline-time.monotonic()
         if remaining<=0: raise ValueError('Upstream total time budget exhausted')
         timeout=min(15,remaining)
+        raw=None
         if shutil.which('gh'):
-            r=subprocess.run([shutil.which('gh'),'api',endpoint],capture_output=True,timeout=timeout)
-            if r.returncode: raise ValueError('GitHub read failed; not unchanged')
-            raw=r.stdout
-        else:
+            try:
+                r=subprocess.run([shutil.which('gh'),'api',endpoint],capture_output=True,timeout=timeout)
+                if r.returncode==0: raw=r.stdout
+            except subprocess.TimeoutExpired:
+                pass
+        # Public read-only fallback: gh may exist without an authenticated account.
+        # Do not create credentials, log stderr, or infer a network failure from that state.
+        if raw is None:
+            remaining=self.deadline-time.monotonic()
+            if remaining<=0: raise ValueError('Upstream total time budget exhausted')
             req=urllib.request.Request('https://api.github.com/'+endpoint,headers={'User-Agent':'portable-skill-maintenance','Accept':'application/vnd.github+json'})
-            with urllib.request.urlopen(req,timeout=timeout) as r: raw=r.read(15_000_001)
+            with urllib.request.urlopen(req,timeout=min(15,remaining)) as r: raw=r.read(15_000_001)
             if len(raw)>15_000_000: raise ValueError('GitHub response size bound exceeded')
         data=json.loads(raw); self.cache[endpoint]=data; return data
     def tree(self,repo,ref,prefix):
