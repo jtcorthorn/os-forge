@@ -25,6 +25,12 @@ One authoritative home per fact. Company evidence belongs to that company; perso
 
 Read [build](references/build.md) for the end-to-end workflow; [organization](references/organization.md) for authorized physical moves; [extraction](references/extraction.md) for evidence processing. Follow the owner's existing authorization. A scaffold request alone does not authorize moves; an explicit reorganization request does. Prepare an exact migration map and recovery path before moving. Do not introduce repeated approval gates for already authorized technical steps.
 
+## First useful implementation
+
+For a new owner without a broader approved scope, start with one useful task and only its necessary sources. Keep originals in place. The neutral scaffold and prepared role cards can be generated together; do not require a full digital-life inventory, account connections, separate agents or specialist customization before the first result. Use the current assistant sequentially. Adapt to the owner's existing commitments when a broader build or reorganization was explicitly requested.
+
+Confirm actual read/write capability before promising construction. A chat-only surface can prepare a proposal or files for download, but cannot certify a local deployment. Keep each recipient's root and accounts separate, including within a family; sharing the neutral method grants no access to another person's records.
+
 ## Use the factory and deterministic tools
 
 `assets/blueprint/` contains neutral maps, contracts, personal domains, templates, memory, portable methods and six general fleet roles. Adapt it with an owner configuration inside the recipient's Intake folder; see [the example](assets/instance.example.json). Configure actual company routes and fleets from evidence. Existing local work is not disposable.
@@ -47,6 +53,6 @@ See [runtime requirements](references/runtime.md). Use deterministic helpers for
 
 Deliver `EMPIEZA_AQUI.md` in the owner's language, a knowledge entry, a fleet entry, reproducible local search and a concise coverage/exception record. Claims link to originals with dates/versions and exact page, paragraph, sheet/cell or slide locators. Keep proposals, unsigned drafts, historical reports, stored calculations and current confirmed facts distinct.
 
-Require original-byte verification, active navigation and one useful task walk. Probe the fleet's routing, context boundaries and handoff behavior; report warm smoke tests separately from independent runtime probes. Role cards are prepared assets, not proof of autonomous workers.
+Require original-byte verification for supplied originals, active navigation and one useful task walk. With no supplied files, record that coverage explicitly and complete an owner-chosen task without inventing personal facts. A new session should find the saved result through the entry and domain map, without a hint containing its exact path; if no new session is available, record continuation as unverified. Reopen only for a changed requirement or material new evidence. Do not hold a useful first implementation for historical cleanup or optional fleet expansion. Probe the fleet's routing, context boundaries and handoff behavior; report warm smoke tests separately from independent runtime probes. Role cards are prepared assets, not proof of autonomous workers.
 
 Report inventory, extraction, interpretation, runtime adoption and effective access separately. Images, scans, video and inaccessible pointers remain explicit gaps. Append the owning `_meta/BITACORA.md`, then close. Later intake processes only new/changed owner inputs, updates affected knowledge and preserves prior decisions.

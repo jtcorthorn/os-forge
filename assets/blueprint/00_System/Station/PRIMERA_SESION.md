@@ -7,7 +7,7 @@ No necesitas una aplicación específica para leer este OS. Un asistente con acc
 3. Pide que encuentre una fuente de Intake y explique su fecha y qué evidencia contiene.
 4. Pide crear `00_System/Station/probe.txt` con una frase elegida por ti y leerla de vuelta. Comprueba el archivo tú mismo.
 5. Pide una tarea real pequeña basada en esa fuente, guardada en su área correspondiente.
-6. Abre una sesión nueva y pide continuar usando el archivo guardado, sin depender del chat anterior.
+6. Abre una sesión nueva. Pide leer la entrada del OS, encontrar el resultado en su área y continuar desde lo guardado, sin darle la ruta exacta ni depender del chat anterior. Si no puedes abrir otra sesión, registra esta comprobación como pendiente.
 
 Registra app/modelo, fecha, ruta montada y resultado en un archivo `RESULTADO_YYYY-MM-DD.md` aquí. No escribas contraseñas ni tokens.
 

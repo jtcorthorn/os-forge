@@ -1,6 +1,6 @@
 # Build or continue an OS
 
-1. Resolve the owner's root; read existing maps/contracts. Inspect original folders and current outputs. Preserve existing human-authored records, active generators and business boundaries.
+1. Resolve the owner's root; read existing maps/contracts. Inspect original folders and current outputs. Preserve existing human-authored records, active generators and business boundaries. For a new owner, agree one useful first result and the minimum evidence needed to accept it. Check actual read/write access. Without a broader requested scope, use only the sources needed for that task, keep originals in place and work through the current assistant. A family relationship does not grant access to another recipient's root or account.
 2. Inventory explicit source paths before adding generated material:
 
 ```text
@@ -23,7 +23,7 @@ Every unmanaged collision blocks the entire apply, including identical bytes. Pr
 The recipient must be outside this skill and its ancestors. Private data never enters the public package. If deployment is blocked by a control collision, preparation inside the recipient can continue.
 
 6. For physical organization use [organization](organization.md); for deeper evidence processing use [extraction](extraction.md). A map over scattered folders is insufficient when actual moves were requested.
-7. Build the fleet using the [bundled method](../assets/blueprint/00_System/Skills/agent-fleet/SKILL.md). Keep six general roles available, then add only evidenced company specialists. Include a routing table, role cards, delegated-work template, model policy and probes. Names/personas are optional owner decisions; libraries do not need agents.
+7. Build the fleet using the [bundled method](../assets/blueprint/00_System/Skills/agent-fleet/SKILL.md). Keep six general roles available as prepared methods, then add only evidenced company specialists. A first implementation can use the coordinator and relevant method sequentially in one assistant; do not require separate runtime setup or personalized cards for every role before useful work. Include a routing table, role cards, delegated-work template, model policy and probes. Names/personas are optional owner decisions; libraries do not need agents.
 8. Reuse valid notes and add small source-linked knowledge around real questions. Keep raw extraction separate from knowledge and current records. Do not produce a note per file solely to increase document count.
 9. Verify active structure:
 
@@ -33,4 +33,4 @@ python <skill>/scripts/forge.py verify --target <root>
 
 This checks managed files and local Markdown links, not original hashes, Office dependencies, cloud access or semantic accuracy. Check meaningful properties separately. Retain historical snapshots in root `_archive/` so obsolete links are not mistaken for active routes.
 
-10. Walk entry -> domain contract -> actual source -> useful answer or editable artifact. Compare one consequential synthesis with original content, verify original bytes, and exercise fleet routing/handoff. Deliver entry guide, knowledge/fleet routes, coverage and station requirements. Append owning history. Stop when local acceptance passes.
+10. Walk entry -> domain contract -> actual source -> useful answer or editable artifact. Compare one consequential synthesis with original content, verify original bytes, and exercise fleet routing/handoff. Deliver entry guide, knowledge/fleet routes, coverage and station requirements. Append owning history. For continuation, ask a fresh session to find the saved result from the root entry and domain map without giving its file path. Record missing runtime access as unverified rather than simulating a pass. Stop when the agreed acceptance passes; optional cleanup and dormant roles do not block use. Reopen for material new evidence or changed requirements.

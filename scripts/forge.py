@@ -33,6 +33,11 @@ def render(config):
     for path in sorted(blueprint.rglob('*')):
         if not path.is_file():
             continue
+        # Workshop history and interpreter caches are not recipient templates.
+        if any(part in {'_archive', '__pycache__', '.git'} for part in path.relative_to(blueprint).parts):
+            continue
+        if path.suffix.lower() in {'.pyc', '.pyo'}:
+            continue
         relative = path.relative_to(blueprint).as_posix()
         data = path.read_bytes()
         if path.suffix.lower() in {'.md', '.txt', '.json', '.yaml', '.yml'}:
@@ -173,6 +178,10 @@ def verify(target):
         if not p.is_file(): missing.append(rel)
         elif sha(p.read_bytes()) != item['sha256']: modified.append(rel)
     for p in docs:
+        # Retained snapshots keep their historical links; only active routes
+        # determine navigation readiness. Managed-byte checks above still apply.
+        if '_archive' in p.relative_to(target).parts:
+            continue
         text = p.read_text(encoding='utf-8-sig')
         if '{{OWNER}}' in text: unresolved.append(p.relative_to(target).as_posix())
         if p.name == 'MAPA.md' and len(text.splitlines()) > 60:

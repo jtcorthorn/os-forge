@@ -11,6 +11,8 @@ Give the OS an explicit working organization. One coordinator owns the outcome; 
 
 Read root MAPA and the selected domain contracts. Personal coordination lives in `00_System/Agents/`. Company fleets live in their company's `_agents/`; personal fleet entries link to them without copying private company context. Real team/management restrictions require separate authorized mounts and effective-access checks. A folder called Management does not establish access control.
 
+For a first useful implementation, one assistant may perform the task sequentially while unused cards remain prepared. Do not require independent workers, personalized personas or runtime setup for every role before delivering that result.
+
 Keep the six supplied general roles as available methods: coordinator, architect, maintainer, designer, researcher and council. Add company leads/specialists only for jobs evidenced by the company's actual work. Libraries and empty speculative domains do not need personas. Named characters are optional and belong to the accountable operator; neutral role names are a useful default. Do not simulate real employees or invent an operator's approval.
 
 ## Required fleet artifacts

@@ -2,6 +2,13 @@
 
 Only verified, reusable product changes belong here. Repository changes do not imply installation or activation in an owner's existing OS.
 
+## 2026-10-21
+
+- Fixed fresh-build verification failures caused by nested workshop archives: exclude history and bytecode from deployment, preserve recipient history, and check active links without treating archived snapshots as current navigation.
+- Added a self-service Spanish start: private recipient root, one useful task, a few optional sources, originals kept in place and no account connections required.
+- Clarified that the six prepared roles can be used sequentially by one assistant; unused roles and optional cleanup do not block a useful first implementation.
+- Added fresh-session result discovery to handover and source/status checks for retrieved lessons, with explicit limits for unavailable access and partial search coverage.
+
 ## 2026-10-12
 
 - Added dependency-pin reconciliation guidance after an observed hosted integrity stop: preserve the hash guard, check the approved change and affected deployment references, then distinguish a verified reference repair from an actual hosted retry.

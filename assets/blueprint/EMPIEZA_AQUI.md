@@ -9,6 +9,9 @@ El inventario registra las ubicaciones actuales de tus originales y la cobertura
 3. Haz [la prueba de station](00_System/Station/PRIMERA_SESION.md). Deja el resultado, incluso si algo falla.
 4. Completa con el agente las cinco preguntas de [tu perfil](00_System/Identity/PROFILE.md).
 5. Elige una tarea real. Puedes pedir: «Usa mis fuentes para preparar el próximo paso de un proyecto; distingue hechos y pendientes».
+6. En una sesión nueva, pide: «Lee la entrada del OS, encuentra mi último resultado en el área correspondiente y continúa desde lo que quedó guardado». Comprueba que lo encuentre sin darle su ruta exacta.
+
+Puedes empezar con un solo asistente y pocos archivos. Los roles preparados y las áreas vacías pueden esperar. Si aún no aportaste fuentes, elige una tarea que no necesite inventar datos personales. Tu carpeta es privada; compartir OS Forge con un familiar no comparte tus registros ni tus cuentas.
 
 ## Cómo seguir construyendo
 - Nuevo material: guárdalo en [_inbox](_inbox/CONTEXT.md) y pide clasificarlo con su fuente.

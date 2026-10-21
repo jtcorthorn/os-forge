@@ -72,6 +72,26 @@ class ForgeDeploymentTests(unittest.TestCase):
         for relative, item in manifest["files"].items():
             self.assertEqual(item["sha256"], forge.sha((self.target / relative).read_bytes()))
 
+    def test_blueprint_history_and_bytecode_are_not_deployed(self):
+        self.source('00_System/Skills/_archive/old.md', b'[Historical](missing.md)\n')
+        self.source('00_System/Tools/__pycache__/old.pyc', b'cached code')
+        self.source('00_System/Tools/old.pyc', b'cached code')
+        self.assertTrue(forge.deploy(self.config, self.target, apply=True)['applied'])
+        self.assertFalse((self.target / '00_System/Skills/_archive').exists())
+        self.assertFalse((self.target / '00_System/Tools/old.pyc').exists())
+
+    def test_retained_history_does_not_hide_broken_active_routes(self):
+        forge.deploy(self.config, self.target, apply=True)
+        history = self.target / '00_System/Skills/_archive/old.md'
+        history.parent.mkdir(parents=True)
+        history.write_text('[Old route](missing.md)\n', encoding='utf-8')
+        self.assertTrue(forge.verify(self.target)['pass'])
+        active = self.target / '00_System/active.md'
+        active.write_text('[Broken active route](missing.md)\n', encoding='utf-8')
+        verified = forge.verify(self.target)
+        self.assertFalse(verified['pass'])
+        self.assertEqual(verified['broken_links'], [{'file': '00_System/active.md', 'link': 'missing.md'}])
+
     def test_same_config_is_idempotent(self):
         forge.deploy(self.config, self.target, apply=True)
         before = self.snapshot()

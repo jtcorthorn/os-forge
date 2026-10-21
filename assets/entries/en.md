@@ -8,6 +8,9 @@ This workspace brings together your sources, methods and working tools. Start wi
 3. Run the [station check](00_System/Station/PRIMERA_SESION.md) and record the observed result, including failures.
 4. Complete the open questions in [your profile](00_System/Identity/PROFILE.md).
 5. Pick one real task with sources and an editable output. Keep confirmed facts and pending decisions distinct.
+6. In a fresh session, ask: "Read the OS entry, find my last result in its owning domain and continue from the saved record." Check discovery without supplying the exact result path.
+
+Start with one assistant and a few files. Prepared roles and empty domains can wait. With no sources supplied, choose a task that does not require invented personal facts. Keep your root private; sharing OS Forge with a relative does not share your records or accounts.
 
 ## Keep building
 - New material: place it in [inbox](_inbox/CONTEXT.md) and request source-based classification.
