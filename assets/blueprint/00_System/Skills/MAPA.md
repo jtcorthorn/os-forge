@@ -17,6 +17,7 @@ Status: packaged on 2026-10-03; not installed or runtime verified. These are met
 | Read unfamiliar formats or preserve extraction coverage | [Document access](document-access/SKILL.md) |
 | Discover and operate authorized ongoing improvement | [Continuous improvement](continuous-improvement/SKILL.md) |
 | Improve a skill or maintain an OS | [Skill improvement](skill-improvement/SKILL.md), [OS maintenance](os-maintenance/SKILL.md) |
+| Compare upstream skill content or verify actual runtime reads/use | [Skill maintenance](skill-maintenance/SKILL.md) (portable helper; explicit host coverage) |
 
 ## Runtime dependencies
 

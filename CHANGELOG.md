@@ -4,6 +4,8 @@ Only verified, reusable product changes belong here. Repository changes do not i
 
 ## 2026-10-21
 
+- Added portable skill-subtree update checks and explicit read/application/property receipts, preserving local adapters and reporting unavailable collection as unknown. Unchanged reads are deduplicated within a named context; repository publication does not establish installed-host adoption.
+
 - Fixed fresh-build verification failures caused by nested workshop archives: exclude history and bytecode from deployment, preserve recipient history, and check active links without treating archived snapshots as current navigation.
 - Added a self-service Spanish start: private recipient root, one useful task, a few optional sources, originals kept in place and no account connections required.
 - Clarified that the six prepared roles can be used sequentially by one assistant; unused roles and optional cleanup do not block a useful first implementation.
