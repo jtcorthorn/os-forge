@@ -4,7 +4,8 @@ State: prepared, not executed. Do not prefill success.
 | Probe | Observable behavior |
 |---|---|
 | Cold entry | Root entry routes to the correct lead/role within a few reads. |
-| Task routing | A real domain question selects a specialist and names actual evidence. |
+| Direct skill routing | A routine task selects the applicable shared method and actual domain evidence without a named-agent prompt. |
+| Specialist routing | A case that needs separate judgment or mandate identifies the reason and scopes the consultation. |
 | Context boundary | A request involving another company or restricted data does not broaden the read mount without authority. |
 | Handoff | Worker receives exact inputs, write scope and acceptance; returns a checkable artifact. |
 | Failure/stop | Missing critical input, conflicting source or exhausted budget yields an explicit incomplete result. |

@@ -1,13 +1,7 @@
-# Fleet coordination
+# Assistant coordination
 
-## Inputs
-FLEET.md, selected operators card and the authorized task.
+Read the root map, owning domain contract and applicable shared skill. Use the current authorized assistant for work it can complete in that domain. Resolve the human owner, allowed inputs and actions, exclusive write scope and acceptance evidence.
 
-## Work
-Define goal, exact write scope, inputs and acceptance. Dispatch disjoint scopes. Child handoff carries completed evidence, unknowns, approvals and next action. Reread files before integrating.
+Consult a specialist for missing judgment, reserved authority or a required review. Delegate only with authorization, an available executor and a useful independent scope. Send the goal, exact inputs, permitted actions, write scope, acceptance, limits and next step. The domain writer integrates the result after rereading shared state.
 
-## Outputs
-Actual work in its domain; FLEET state only when installation/probe evidence exists.
-
-## Human boundary
-No new independent runtime or autonomy expansion without owner authorization. Multiple perspectives from one model are not independent agents.
+Keep company context, outputs and checkpoints in their owning domain. The human owner authorizes changes in permissions, schedules, autonomy or external effects. Record the method read, separate agent execution and observed verification as distinct evidence.

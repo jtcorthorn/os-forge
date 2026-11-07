@@ -2,14 +2,8 @@
 
 | Role | Canonical card | State | Runtime evidence |
 |---|---|---|---|
-| coordinator | [card](operators/coordinator.md) | prepared | None |
-| architect | [card](operators/architect.md) | prepared | None |
-| maintainer | [card](operators/maintainer.md) | prepared | None |
-| designer | [card](operators/designer.md) | prepared | None |
-| researcher | [card](operators/researcher.md) | prepared | None |
-| council | [card](operators/council.md) | prepared | None |
+| coordinator | [guide](operators/coordinator.md) | prepared | The current assistant can use this guide directly |
 
-States: prepared, installed, probed, in use, dormant. A real dated output is required for in use.
-Company fleets are registered by links to company-owned cards, not copied here.
-Build real company specialists with the [fleet method](../Skills/agent-fleet/SKILL.md); use [card](../../_templates/agents/CARD.md), [handoff](../../_templates/agents/HANDOFF.md) and [probe](../../_templates/agents/PROBES.md) templates.
-Choose available executors by capability and task cost. General role switching within one assistant is not independent execution.
+Register additional roles once an accountable owner assigns a distinct operational responsibility. Add its canonical card, human owner, current state and supporting runtime evidence. Link to company-owned registries from here. Keep the company cards with their company.
+
+States: prepared, installed, probed, in use, dormant. A real dated output is required for in use. See [Agent Fleet](../Skills/agent-fleet/SKILL.md) for role design and transitions. Shared skills route through the [library](../Skills/MAPA.md).

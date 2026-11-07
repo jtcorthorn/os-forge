@@ -24,6 +24,14 @@ class FirstBuildTests(unittest.TestCase):
                 verified = forge.verify(root)
                 self.assertTrue(verified['pass'], verified)
                 self.assertEqual(verified['locally_modified'], [])
+                entry = (root / 'EMPIEZA_AQUI.md').read_text(encoding='utf-8')
+                self.assertIn('00_System/Skills/MAPA.md', entry)
+                fleet = (root / '00_System/Agents/FLEET.md').read_text(encoding='utf-8')
+                role_rows = [line for line in fleet.splitlines() if '(operators/' in line]
+                self.assertEqual(len(role_rows), 1)
+                self.assertTrue(role_rows[0].startswith('| coordinator |'))
+                for skill in ('delibera', 'supplier-correspondence'):
+                    self.assertTrue((root / '00_System/Skills' / skill / 'SKILL.md').is_file())
                 before = {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()}
                 self.assertTrue(forge.deploy(config, root, apply=True)['no_op'])
                 self.assertEqual(before, {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()})

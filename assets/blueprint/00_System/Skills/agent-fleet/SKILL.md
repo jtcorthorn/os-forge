@@ -1,48 +1,37 @@
 ---
 name: agent-fleet
-description: Design and prepare a personal or company agent fleet inside an ICM workspace. Define a coordinator, task-specific specialists, context boundaries, deliverables, handoffs, model-capability policy and activation probes. Use when building an OS fleet or extending an existing fleet with a real new responsibility.
+description: Route work in an ICM workspace through a general assistant, shared skills and optional dedicated agents. Use when setting up an OS, deciding whether a specialist is needed or transferring an existing responsibility.
 ---
 
 # Agent Fleet
 
-Give the OS an explicit working organization. One coordinator owns the outcome; specialists own concrete jobs with scoped inputs and checkable outputs. A fleet may operate sequentially through one assistant or through separately executed agents when the host supports authorized delegation. State which mode actually occurred.
+Start with one general assistant and an accountable human owner. Load the task's method directly. Add a dedicated agent when a real responsibility calls for its own ongoing context, scoped access, specialist judgment, independent review or continuity.
 
-## Establish ownership and topology
+## Route the task
 
-Read root MAPA and the selected domain contracts. Personal coordination lives in `00_System/Agents/`. Company fleets live in their company's `_agents/`; personal fleet entries link to them without copying private company context. Real team/management restrictions require separate authorized mounts and effective-access checks. A folder called Management does not establish access control.
+Read the root MAPA, the owning domain's contract and the actual sources. Name the human owner, expected writer and acceptance evidence. Use the [skills library](../MAPA.md) to load the canonical method and the owning domain's authorized variant, tools, account and data. A shared method carries procedure. The domain supplies business rules, voice, permissions and records.
 
-For a first useful implementation, one assistant may perform the task sequentially while unused cards remain prepared. Do not require independent workers, personalized personas or runtime setup for every role before delivering that result.
+| Situation | Execution |
+|---|---|
+| The current assistant has the method, evidence and mandate | Complete the task directly. Apply a relevant role guide as needed. |
+| A judgment, decision right or independent check is missing | Consult the designated specialist or accountable human for that bounded question. The domain writer retains the case. |
+| A bounded independent task warrants the overhead | Delegate to an available authorized executor with one writer per artifact. |
+| A persistent responsibility needs a distinct mandate, context or access boundary | Prepare a dedicated role and verify its actual mount, triggers and work before assigning operational ownership. |
 
-Keep the six supplied general roles as available methods: coordinator, architect, maintainer, designer, researcher and council. Add company leads/specialists only for jobs evidenced by the company's actual work. Libraries and empty speculative domains do not need personas. Named characters are optional and belong to the accountable operator; neutral role names are a useful default. Do not simulate real employees or invent an operator's approval.
+Reading a skill or role card is a source read. Record independent consultation or execution only when it occurred. Use the least costly capable executor, and use deterministic tools for hashing, extraction, calculations and comparisons.
 
-## Required fleet artifacts
+## Define a dedicated role
 
-Use the recipient templates under `_templates/agents/`.
+Keep personal coordination under `00_System/Agents/` and company roles under the owning company's `_agents/`. Use the company's authorized mount and verify effective access separately. A folder name alone grants no access restrictions.
 
-- Personal `00_System/Agents/FLEET.md` routes general roles and company-owned fleets.
-- Each active company gets `_agents/FLEET.md` and a lead card plus one card per real specialist responsibility. Link the fleet from the company's map/entry, so a cold start discovers it.
-- Each card records accountable human owner (or unknown), purpose, read scope, exclusive write scope, outputs, allowed actions, escalation conditions, skill routes, model-capability policy and actual runtime state/evidence.
-- Record shared working posture: source-based claims, explicit assumptions, reversible local drafts and decisions by the accountable human. Specialist voice is expressed through what it checks first, not decorative personality.
-- Use one handoff contract and one probe record. Keep evidence with the owning domain, not duplicated in a global memory.
+Use the [card](../../../_templates/agents/CARD.md), [handoff](../../../_templates/agents/HANDOFF.md) and [probe](../../../_templates/agents/PROBES.md). Record the human owner, recurring or concrete obligation, precise read/write scope, permitted actions, skill routes, outputs, approval and failure boundaries, runtime state and recovery path. Link the canonical card from the fleet registry. Keep methods reusable and identity optional.
 
-The role card is authoritative for responsibility; the fleet table routes to it. Do not maintain competing config/registry copies of the same role details.
+Delegate only when useful and authorized. Give the worker the goal, inputs, write scope, permitted actions, acceptance criteria, budget and stop conditions. The handoff records completed evidence, approvals, gaps and the exact next step. Keep the evidence and deliverable with the owning domain.
 
-## Select roles and models economically
+## Verify adoption and transfer
 
-Start with the coordinator to identify goal, authority and acceptance. Use the relevant specialist when its contract helps. Broad system/ownership decisions need strong judgment; source-based analysis/writing needs a capable executor; bounded classification/formatting can use a smaller model when deterministic checks detect meaningful errors. Scripts do mass hashing, extraction, copying and comparisons.
+Record prepared source, host installation, observed loading, task application and verified outcomes separately. Run a fresh-session routing and context probe when a host is available. Check that a routine task selects a shared skill without a named-agent prompt and that an out-of-scope task leaves the boundary intact. Add a real bounded task before marking a dedicated role in use.
 
-Discover actual available models and user preferences. Choose the least costly capable option without inventing prices, model availability or identity. Record selected model/executor when verifiable. If no choice exists, keep a capability recommendation and use the available assistant honestly.
+Before consolidating roles, inventory actual manual work, live triggers, in-flight cases, unique records, access and delegated rights. Preserve recoverable predecessors. Prove that the authorized successor can load the method and carry the real obligation, then record one dated handoff of ownership. Keep the current owner responsible until that cutover. If the successor misses a material function, pause new external effects, reconcile work already done and restore the last verified owner through approved controls.
 
-Delegate only when authorized and independent work justifies overhead. Assign each worker goal, inputs, write scope, permitted actions, acceptance evidence, budget/stop conditions and exact return format. Do not assign multiple writers to the same file. The coordinator integrates after rereading shared state. A handoff carries current authority, completed evidence, remaining work and exact next step; ask the human to relay messages only when no authorized coordination mechanism exists.
-
-When working through one assistant, identify the current role when helpful, but do not describe role switching as independent agents, votes or verification. Deliver one coherent answer. Preserve source ownership when integrating specialist outputs.
-
-## State, activation and probes
-
-Use evidence-based states: `prepared` (card exists), `installed` (specific host discovers/loads it), `probed` (dated behavior observed), `in_use` (real dated output), `dormant`. Record executor, date, input, output and limitations for transitions; do not advance on a declaration alone.
-
-Probe a cold start, task routing, sensitive-context boundary, delegation/handoff and failure/stop route. At least one actual task must reach a useful artifact in the allowed write scope. An agent that wrote the rules can run a warm smoke check; independent probes require another runtime/session with no inherited answer. Lack of an independent runtime is a clearly stated limit, not grounds to invent a pass.
-
-Cards and prepared probes are sufficient to deliver a fleet ready for adoption. Autonomous execution, recurring scheduling, cloud mounts and external actions need actual mechanisms and explicit authority. Preparation does not deploy a background process.
-
-Close useful outputs in their domain and append `_meta/BITACORA.md`. Expand the fleet only when a new observed job needs it; do not add agents merely to make an org chart look complete.
+Close with the owning record and checkable outcome. Shared skills can be adopted one task at a time. Activating an agent, changing a schedule or moving decision rights requires its own authority.

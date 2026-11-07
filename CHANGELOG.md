@@ -2,6 +2,12 @@
 
 Only verified, reusable product changes belong here. Repository changes do not imply installation or activation in an owner's existing OS.
 
+## 2026-11-07
+
+- Start new builds with one general assistant that loads shared skills directly. Register dedicated agents for assigned responsibilities and verify real work and boundaries before transferring ownership.
+- Add portable supplier correspondence and explicit-invocation Delibera methods. Preserve local account, ownership, approval and evidence boundaries.
+- Check for overlapping schedules, reconcile uncertain external actions and review the exact staged bytes of externally sourced skills before installing them.
+
 ## 2026-10-21
 
 - Added portable skill-subtree update checks and explicit read/application/property receipts, preserving local adapters and reporting unavailable collection as unknown. Unchanged reads are deduplicated within a named context; repository publication does not establish installed-host adoption.

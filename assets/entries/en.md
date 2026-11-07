@@ -15,7 +15,7 @@ Start with one assistant and a few files. Prepared roles and empty domains can w
 ## Keep building
 - New material: place it in [inbox](_inbox/CONTEXT.md) and request source-based classification.
 - New company/project: use [templates](_templates/MAPA.md) and preserve its own authority and boundaries.
-- Work with your AI team: open the [fleet](00_System/Agents/MAPA.md), select the role and scope its inputs. The [fleet method](00_System/Skills/agent-fleet/SKILL.md) prepares specialists and handoffs.
+- Work with your AI assistant. Load the [shared method](00_System/Skills/MAPA.md) and the owning domain contract. Use [agent routes](00_System/Agents/MAPA.md) when the work needs specialist judgment, a separate mandate or an authorized handoff.
 - New capability: select the relevant [skill](00_System/Skills/MAPA.md); a packaged method is not proof of runtime installation.
 - Continue later: save a checkpoint with goal, evidence, authorization and exact next step in the owning domain.
 

@@ -1,11 +1,13 @@
 # Portable skills library
 
-Status: packaged on 2026-10-03; not installed or runtime verified. These are methods for the recipient OS. Each folder contains a `SKILL.md` entrypoint; read only the relevant skill and its linked references.
+Status: packaged for the recipient OS. Verify discovery, loading and use on the actual host. These are methods for the recipient OS. Each folder contains a `SKILL.md` entrypoint; read only the relevant skill and its linked references.
 
 | Need | Skill |
 |---|---|
 | Structure a folder-based workspace or map a system | [ICM architect](icm-architect/SKILL.md) (complete MIT-licensed package) |
-| Prepare personal/company roles, context boundaries and handoffs | [Agent Fleet](agent-fleet/SKILL.md) |
+| Choose direct skill use, a specialist or a dedicated agent | [Agent Fleet](agent-fleet/SKILL.md) |
+| Resolve supplier or forwarder correspondence within the owning case | [Supplier correspondence](supplier-correspondence/SKILL.md) |
+| Examine a decision when the owner explicitly says Delibera | [Delibera](delibera/SKILL.md) |
 | Retrieve web, social, developer, or media evidence | [Agent Reach](agent-reach/SKILL.md) (portable adapter) |
 | Research and trace claims to sources | [Evidence research](evidence-research/SKILL.md) |
 | Create a visual direction | [Visual design](visual-design/SKILL.md) |

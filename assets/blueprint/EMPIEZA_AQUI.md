@@ -17,7 +17,7 @@ Puedes empezar con un solo asistente y pocos archivos. Los roles preparados y la
 - Nuevo material: guárdalo en [_inbox](_inbox/CONTEXT.md) y pide clasificarlo con su fuente.
 - Nueva empresa o proyecto: pide usar [las plantillas](_templates/MAPA.md). La empresa conserva sus propias reglas.
 - Nueva capacidad: consulta [skills](00_System/Skills/MAPA.md). Estar en la biblioteca no significa estar instalado en tu aplicación.
-- Trabajar con tu equipo de IA: abre [el agent fleet](00_System/Agents/MAPA.md), selecciona el rol y limita su contexto a la tarea. El [método Agent Fleet](00_System/Skills/agent-fleet/SKILL.md) prepara especialistas y handoffs para cada actividad.
+- Trabajar con tu asistente de IA. Elige el [método](00_System/Skills/MAPA.md) según la tarea y carga el contexto del dominio. Usa [las rutas de agentes](00_System/Agents/MAPA.md) si necesitas juicio especializado, un mandato separado o delegar trabajo.
 - Continuar otro día: pide dejar un checkpoint con objetivo, avances, permisos y siguiente acción.
 - Mejorar el OS: plantea la fricción al [método de mantenimiento](00_System/Workshop/CONTEXT.md).
 

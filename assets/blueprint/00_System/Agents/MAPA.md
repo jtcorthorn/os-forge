@@ -1,16 +1,15 @@
-# Agent fleet
-This is a prepared set of roles, usable by one assistant or separately mounted agents.
-No role is claimed installed or running. Read [FLEET.md](FLEET.md).
-| Task | Card |
+# Assistants and capabilities
+
+Start with the current assistant and the [skills library](../Skills/MAPA.md). Load the owning domain's contract and only the sources needed for the task.
+
+| Need | Route |
 |---|---|
-| Coordinate work | [Coordinator](operators/coordinator.md) |
-| Develop capabilities | [Architect](operators/architect.md) |
-| Repair navigation or methods | [Maintainer](operators/maintainer.md) |
-| Produce visual artifacts | [Designer](operators/designer.md) |
-| Research and source evaluation | [Researcher](operators/researcher.md) |
-| Weigh a decision | [Council](operators/council.md) |
-| Install or rebuild a role | [Deployment](DEPLOYMENT.md) |
-| Parallel work and handoff | [Contract](CONTEXT.md) |
-| Build or extend the fleet | [Agent Fleet method](../Skills/agent-fleet/SKILL.md) |
-| Reusable cards, handoffs and probes | [Templates](../../_templates/agents/CARD.md), [handoff](../../_templates/agents/HANDOFF.md), [probes](../../_templates/agents/PROBES.md) |
-Company specialists belong in their company _agents/, never in a globally shared personal mount.
+| Coordinate a task in the current assistant | [Coordinator guide](operators/coordinator.md) |
+| Architecture, maintenance, design or research | Optional guides for [architecture](operators/architect.md), [maintenance](operators/maintainer.md), [design](operators/designer.md) and [research](operators/researcher.md) |
+| Examine a decision | [Delibera](../Skills/delibera/SKILL.md) when explicitly invoked, or [Council](operators/council.md) for a requested multi-perspective review |
+| Choose a shared method or a dedicated agent | [Agent Fleet method](../Skills/agent-fleet/SKILL.md) |
+| Find an assigned role or record its state | [Fleet registry](FLEET.md) |
+| Consult, delegate or hand off | [Contract](CONTEXT.md) and [handoff template](../../_templates/agents/HANDOFF.md) |
+| Set up or rebuild a dedicated agent | [Deployment](DEPLOYMENT.md), [card](../../_templates/agents/CARD.md) and [probes](../../_templates/agents/PROBES.md) |
+
+Keep company roles inside the company boundary. The guides above are available to the current assistant as methods.

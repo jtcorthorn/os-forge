@@ -1,8 +1,8 @@
 # OS Forge
 
-Construye tu propio sistema operativo personal a partir de tus archivos, con una estructura ICM y un **agent fleet** para trabajar sobre empresas, proyectos, finanzas, salud, aprendizaje, viajes y conocimiento.
+Construye tu propio sistema operativo personal a partir de tus archivos, con una estructura ICM y **capacidades reutilizables** para trabajar sobre empresas, proyectos, finanzas, salud, aprendizaje, viajes y conocimiento.
 
-OS Forge coordina el proceso completo. [ICM Architect](assets/blueprint/00_System/Skills/icm-architect/SKILL.md) aporta el método de arquitectura y viene incluido con su licencia. [Agent Fleet](assets/blueprint/00_System/Skills/agent-fleet/SKILL.md) define coordinador, especialistas, contexto permitido, entregables, delegación y pruebas. Los demás skills se consultan según la tarea.
+OS Forge coordina el proceso completo. [ICM Architect](assets/blueprint/00_System/Skills/icm-architect/SKILL.md) aporta el método de arquitectura y viene incluido con su licencia. [Agent Fleet](assets/blueprint/00_System/Skills/agent-fleet/SKILL.md) ayuda a decidir qué puede resolver tu asistente y cuándo hace falta un agente dedicado. Los demás skills se consultan según la tarea.
 
 ## Empezar
 
@@ -15,13 +15,13 @@ Para empezar sin ayuda de quien te lo compartió:
 3. Elige una sola tarea que te sirva hoy y, si hace falta, uno o dos archivos poco sensibles. No necesitas reunir toda tu vida digital ni conectar cuentas para empezar.
 4. Copia esta petición y sustituye la ruta y la tarea:
 
-> Lee el SKILL.md de OS Forge y ayúdame a crear mi OS en «ruta de una carpeta privada nueva», separado del paquete. Mi primera tarea es «tarea concreta». Usa solo los archivos que te indique, mantén los originales donde están y guarda un resultado útil con sus fuentes. Empieza con este asistente; deja los demás roles preparados para cuando hagan falta. Comprueba que una sesión nueva pueda encontrar y continuar el trabajo. Si te falta acceso, dime qué pudiste verificar y cuál es el único paso que debo resolver.
+> Lee el SKILL.md de OS Forge y ayúdame a crear mi OS en «ruta de una carpeta privada nueva», separado del paquete. Mi primera tarea es «tarea concreta». Usa solo los archivos que te indique, mantén los originales donde están y guarda un resultado útil con sus fuentes. Empieza con este asistente y carga solo el método que la tarea requiera. Comprueba que una sesión nueva pueda encontrar y continuar el trabajo. Si te falta acceso, dime qué pudiste verificar y cuál es el único paso que debo resolver.
 
-Una primera versión está lista cuando encuentras una fuente, guardas un resultado útil y lo recuperas desde una sesión nueva. Los dominios vacíos y los roles sin activar pueden esperar.
+Una primera versión está lista cuando encuentras una fuente, guardas un resultado útil y lo recuperas desde una sesión nueva. Puedes incorporar otros dominios y agentes a medida que aparezca trabajo que los justifique.
 
 Para una organización más amplia, puedes pedir:
 
-> Usa $os-forge para crear mi OS en «ruta de mi carpeta». Organiza los originales dentro del ICM conservando copias de recuperación, extrae información útil e intégrala con referencias. Crea el agent fleet personal y los especialistas que mis actividades necesiten, con límites de contexto y reglas de delegación. Quiero seguir construyéndolo desde mi station.
+> Usa $os-forge para crear mi OS en «ruta de mi carpeta». Organiza los originales dentro del ICM conservando copias de recuperación, extrae información útil e intégrala con referencias. Define qué resuelve mi asistente general con métodos compartidos y qué responsabilidades justifican especialistas, con límites de acceso, criterios de delegación y un responsable humano. Quiero seguir construyéndolo desde mi station.
 
 Para una primera propuesta sin traslado, pide mantener los originales en sus rutas. Si ya tienes un OS, pide integrar el trabajo existente y procesar solo los nuevos archivos. No necesitas las mismas actividades que otra persona.
 
@@ -32,11 +32,11 @@ Necesitas un agente con acceso autorizado a tu carpeta y Python 3.10+. Consulta 
 - Una guía de entrada, mapas pequeños, contratos y plantillas.
 - Originales organizados con inventario, backups y verificación cuando autorizas su traslado.
 - Conocimiento con enlaces y localizadores de sus fuentes; búsqueda local.
-- Un fleet personal con seis roles generales y especialistas por compañía cuando haya un trabajo concreto para ellos.
-- Fichas de agentes con alcance, entradas, salidas, modelo/capacidad requerida, handoffs y estado de activación.
+- Un asistente general como punto de partida, con acceso a métodos compartidos según la tarea. Reserva los agentes dedicados para responsabilidades que requieran juicio especializado, continuidad o un ámbito propio de acceso y operación.
+- Plantillas para agentes dedicados con alcance, responsable, entregables y pruebas de funcionamiento.
 - Una biblioteca de métodos portables, incluido Agent Fleet, que se consultan según la tarea, y una cobertura clara de lo pendiente.
 
-Un fleet puede usarse con un asistente o varios agentes si la plataforma lo permite. Las fichas preparadas no arrancan procesos autónomos. Fotos catalogadas no equivalen a fotos interpretadas; extraer cifras no confirma conciliación. Publicar, enviar, pagar, conectar cuentas o activar automatizaciones requiere su alcance propio.
+El asistente del dominio puede cargar por sí mismo un método de correspondencia o análisis. La revisión independiente y el trabajo delegado requieren un ejecutor real y autorización. Las fichas indican su estado según la evidencia de uso. Fotos catalogadas no equivalen a fotos interpretadas; extraer cifras no confirma conciliación. Publicar, enviar, pagar, conectar cuentas o activar automatizaciones requiere su alcance propio.
 
 ## Compartir
 
