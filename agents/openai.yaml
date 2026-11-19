@@ -1,4 +1,4 @@
 interface:
   display_name: "OS Forge"
-  short_description: "Build an ICM personal OS with an agent fleet"
-  default_prompt: "Use $os-forge to build my personal OS from my files, with source-linked knowledge and a scoped agent fleet."
+  short_description: "Build and maintain your personal OS"
+  default_prompt: "Use $os-forge to build my personal OS. Show me the structure you propose, ask how to adapt it, and leave me a short guide to using and maintaining it."

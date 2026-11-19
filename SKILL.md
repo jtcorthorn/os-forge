@@ -5,7 +5,19 @@ description: Build or extend a personal operating system from owner-provided fil
 
 # OS Forge
 
-Turn the owner's files into an independent personal operating system they can keep building from their own station. Deliver navigable evidence, useful knowledge, editable records and clear ownership and task routes. This is a knowledge workspace, not a bootable computer OS.
+Build a personal OS around the owner's work. Use the bundled ICM Architect method to give their files, projects, businesses and routines clear routes, ownership and a way to grow.
+
+## Start with a short setup conversation
+
+For a new OS or a structural change, show a proposed structure before writing. Use the owner's language. Offer starter areas such as projects, businesses, finance, travel and a library. Include other areas only when they fit the person's work. Explain in one sentence what goes where.
+
+Ask together about the decisions still open:
+
+1. Which areas would you keep, drop, rename or add?
+2. Where should the OS live? Which existing folders or routes already work and should stay in place? Which areas are private or shared, and with whom?
+3. What is the first task you want to do with your OS?
+
+Use answers already provided and ask only for decisions still needed. Confirm the proposed structure with the owner when those choices are open. A clear request with the structure and scope already agreed is enough to proceed. For a routine task in an existing OS, use its current maps and skip setup.
 
 ## Compose the methods
 
@@ -13,13 +25,14 @@ This skill orchestrates the workflow. Load each applicable method directly in th
 
 - **ICM Architect** is the structural foundation. Read the [bundled skill](assets/blueprint/00_System/Skills/icm-architect/SKILL.md), then its relevant form and migration references. Its MIT license travels with it. If the host already provides another version, choose and record one authority rather than silently mixing versions.
 - **Agent Fleet** defines task routing and ownership. Read [the portable fleet method](assets/blueprint/00_System/Skills/agent-fleet/SKILL.md) to choose shared methods, optional specialist consultation or dedicated agents. One general assistant is the default.
+- **OS maintenance** explains how to check routes, verify completed handoffs, preserve deliberate local conventions and rehearse recovery. Leave the [maintenance playbook](assets/blueprint/00_System/Skills/os-maintenance/SKILL.md) accessible from the owner's guide.
 - For research, design, documents, spreadsheets, memory or recurring work, select only the relevant method from the [portable library](assets/blueprint/00_System/Skills/MAPA.md). These are on-demand methods, not dependencies that all need to be loaded or installed.
 
 The supplied library makes the package self-contained. Standard skill folders use `SKILL.md`; links declare composition. Do not invent a host-specific automatic dependency resolver or claim a nested skill was automatically activated.
 
 ## Start with the owner and existing work
 
-Resolve the target root and read its maps, contracts and rules before writing. Inspect actual supplied sources; preserve useful existing records and generators. Ask only for missing facts that change correctness, authority or ownership. Infer domains from evidence rather than copying another person's business structure.
+Resolve the target root and read its maps, contracts and rules before writing. Inspect the supplied sources and preserve useful existing records and generators. When a local convention differs from the starter, check the owner's contract and consumers that rely on it before proposing a change.
 
 One authoritative home per fact. Company evidence belongs to that company; personal health, identity and finance remain in their personal domains. Unknown relationships stay unknown. Private sources, configs and extraction outputs stay in the recipient root, outside this public skill repository.
 
@@ -33,7 +46,7 @@ Confirm actual read/write capability before promising construction. A chat-only 
 
 ## Use the factory and deterministic tools
 
-`assets/blueprint/` contains neutral maps, contracts, personal domains, templates, memory, portable methods and optional role guides. Adapt it with an owner configuration inside the recipient's Intake folder. See [the example](assets/instance.example.json). Configure company routes and register only roles with assigned responsibilities. Existing local work is not disposable.
+`assets/blueprint/` contains neutral maps, contracts, personal domains, templates, memory, portable methods and optional role guides. Select and label the starter areas through the recipient's Intake configuration. See [the example](assets/instance.example.json). Use the existing templates and maps for additional areas. Configure company routes and register only roles with assigned responsibilities.
 
 Resolve every helper from this skill's absolute directory, regardless of shell working directory. `<skill>` and `<root>` in examples are notation, not executable values. Discover the host's Python, tools and models; never assume a particular drive, account or model.
 
@@ -51,7 +64,7 @@ See [runtime requirements](references/runtime.md). Use deterministic helpers for
 
 ## Accept and deliver
 
-Deliver `EMPIEZA_AQUI.md` in the owner's language, a knowledge entry, an assistant and capability entry, reproducible local search and a concise coverage/exception record. Claims link to originals with dates/versions and exact page, paragraph, sheet/cell or slide locators. Keep proposals, unsigned drafts, historical reports, stored calculations and current confirmed facts distinct.
+Deliver `EMPIEZA_AQUI.md` as the owner's short operating guide. Add their actual areas, where to put new material, how to resume their first project and what to ask the assistant to run the maintenance and Agent Fleet playbooks. Link working paths in the recipient OS. Include a knowledge entry, an assistant and capability entry, reproducible local search and concise coverage. Link claims to the dated original and its exact locator. Keep proposals, unsigned drafts, historical reports, stored calculations and current confirmed facts distinct.
 
 Require original-byte verification for supplied originals, active navigation and one useful task walk. With no supplied files, record that coverage explicitly and complete an owner-chosen task without inventing personal facts. A new session should find the saved result through the entry and domain map, without a hint containing its exact path; if no new session is available, record continuation as unverified. Reopen only for a changed requirement or material new evidence. Do not hold a useful first implementation for historical cleanup or optional fleet expansion. Probe direct skill selection, context boundaries and any specialist handoff the owner needs. Record warm smoke checks, fresh-session behavior and real task results separately.
 

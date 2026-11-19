@@ -1,51 +1,36 @@
 # OS Forge
 
-Construye tu propio sistema operativo personal a partir de tus archivos, con una estructura ICM y **capacidades reutilizables** para trabajar sobre empresas, proyectos, finanzas, salud, aprendizaje, viajes y conocimiento.
+Build and run a personal operating system around the way you work. OS Forge proposes a structure inspired by my own JT OS, then adapts it to your files, projects, businesses and routines. It includes playbooks for maintaining the OS and assigning work to AI assistants as it grows.
 
-OS Forge coordina el proceso completo. [ICM Architect](assets/blueprint/00_System/Skills/icm-architect/SKILL.md) aporta el método de arquitectura y viene incluido con su licencia. [Agent Fleet](assets/blueprint/00_System/Skills/agent-fleet/SKILL.md) ayuda a decidir qué puede resolver tu asistente y cuándo hace falta un agente dedicado. Los demás skills se consultan según la tarea.
+Built on Jake Van Clief’s [ICM Architect](https://github.com/RinDig/icm-architect). OS Forge includes the [method](assets/blueprint/00_System/Skills/icm-architect/SKILL.md) and its [MIT license](assets/blueprint/00_System/Skills/icm-architect/LICENSE).
 
-## Empezar
+## Start here
 
-Descarga o clona el repositorio. Conserva esta carpeta completa, incluidos `SKILL.md`, `scripts`, `references`, `agents` y `assets`. En Codex, instálala como `os-forge` en el directorio de skills configurado; por defecto `~/.codex/skills/os-forge`. También puedes darle directamente la ruta de `SKILL.md` a un agente con acceso a tus archivos.
+Give your assistant the link to this repo and copy this request:
 
-Para empezar sin ayuda de quien te lo compartió:
+> Use OS Forge from https://github.com/jtcorthorn/os-forge to help me build my own OS. Show me the structure you propose and ask the questions needed to adapt it. At the end, leave me a short guide to using and maintaining my OS.
 
-1. Guarda el paquete completo fuera de la carpeta donde crearás tu OS. Cada persona usa su propia carpeta privada y sus propias cuentas. Compartir este método no requiere compartir archivos personales.
-2. Abre el paquete en un asistente que pueda leer y guardar archivos. Puedes indicarle la ruta completa de `SKILL.md` sin instalar nada primero. Si tu aplicación solo permite adjuntar archivos al chat, puede preparar una propuesta, pero no verificar una instalación en tu computador.
-3. Elige una sola tarea que te sirva hoy y, si hace falta, uno o dos archivos poco sensibles. No necesitas reunir toda tu vida digital ni conectar cuentas para empezar.
-4. Copia esta petición y sustituye la ruta y la tarea:
+The assistant starts by proposing areas such as projects, businesses, travel and a library. Tell it what to keep, add or rename, what already works, who can access each area and the first task you want to do. Your OS lives in a separate folder under your control.
 
-> Lee el SKILL.md de OS Forge y ayúdame a crear mi OS en «ruta de una carpeta privada nueva», separado del paquete. Mi primera tarea es «tarea concreta». Usa solo los archivos que te indique, mantén los originales donde están y guarda un resultado útil con sus fuentes. Empieza con este asistente y carga solo el método que la tarea requiera. Comprueba que una sesión nueva pueda encontrar y continuar el trabajo. Si te falta acceso, dime qué pudiste verificar y cuál es el único paso que debo resolver.
+Use an assistant that can read the full repo and write to your chosen folder. If your assistant cannot read the repository from the link, clone it and point the assistant at its [SKILL.md](SKILL.md). For Codex skill discovery, place the complete folder under `~/.agents/skills/os-forge` or a project’s `.agents/skills/os-forge`. The core scripts use Python 3.10+. [Runtime requirements](references/runtime.md)
 
-Una primera versión está lista cuando encuentras una fuente, guardas un resultado útil y lo recuperas desde una sesión nueva. Puedes incorporar otros dominios y agentes a medida que aparezca trabajo que los justifique.
+## What you get
 
-Para una organización más amplia, puedes pedir:
+- A map of your own areas and an `EMPIEZA_AQUI.md` guide in your language.
+- Source-linked knowledge and a route for bringing in new material. Originals stay where they are unless you ask Forge to reorganize them.
+- The [maintenance playbook](assets/blueprint/00_System/Skills/os-maintenance/SKILL.md) to check routes, handoffs and recovery.
+- The [Agent Fleet playbook](assets/blueprint/00_System/Skills/agent-fleet/SKILL.md) to use a general assistant and add dedicated roles when the work calls for them.
 
-> Usa $os-forge para crear mi OS en «ruta de mi carpeta». Organiza los originales dentro del ICM conservando copias de recuperación, extrae información útil e intégrala con referencias. Define qué resuelve mi asistente general con métodos compartidos y qué responsabilidades justifican especialistas, con límites de acceso, criterios de delegación y un responsable humano. Quiero seguir construyéndolo desde mi station.
+## Guía breve en español
 
-Para una primera propuesta sin traslado, pide mantener los originales en sus rutas. Si ya tienes un OS, pide integrar el trabajo existente y procesar solo los nuevos archivos. No necesitas las mismas actividades que otra persona.
+> Usa OS Forge desde https://github.com/jtcorthorn/os-forge para ayudarme a construir mi propio OS. Muéstrame primero la estructura que propones y hazme las preguntas necesarias para adaptarla. Al terminar, déjame una guía breve para usar y mantener mi OS.
 
-Necesitas un agente con acceso autorizado a tu carpeta y Python 3.10+. Consulta [dependencias opcionales](references/runtime.md) para PDF/Excel. Los ejemplos de comandos usan rutas simbólicas; el agente debe resolver las rutas reales.
+Abre una carpeta privada en un asistente con acceso a archivos. Dile qué áreas te sirven, qué carpetas ya funcionan, qué vas a compartir y cuál es tu primera tarea. Forge te deja un mapa, una guía de uso y los playbooks para mantener el OS y distribuir responsabilidades. Empieza con los archivos que necesitas para esa tarea.
 
-## Qué recibes
-
-- Una guía de entrada, mapas pequeños, contratos y plantillas.
-- Originales organizados con inventario, backups y verificación cuando autorizas su traslado.
-- Conocimiento con enlaces y localizadores de sus fuentes; búsqueda local.
-- Un asistente general como punto de partida, con acceso a métodos compartidos según la tarea. Reserva los agentes dedicados para responsabilidades que requieran juicio especializado, continuidad o un ámbito propio de acceso y operación.
-- Plantillas para agentes dedicados con alcance, responsable, entregables y pruebas de funcionamiento.
-- Una biblioteca de métodos portables, incluido Agent Fleet, que se consultan según la tarea, y una cobertura clara de lo pendiente.
-
-El asistente del dominio puede cargar por sí mismo un método de correspondencia o análisis. La revisión independiente y el trabajo delegado requieren un ejecutor real y autorización. Las fichas indican su estado según la evidencia de uso. Fotos catalogadas no equivalen a fotos interpretadas; extraer cifras no confirma conciliación. Publicar, enviar, pagar, conectar cuentas o activar automatizaciones requiere su alcance propio.
-
-## Compartir
-
-Publica **solo esta carpeta neutral**. Los OS generados, sus originales, configuraciones, inventarios y backups deben vivir fuera del repositorio. Puedes crear un repositorio vacío en GitHub y subir esta carpeta con la interfaz web o tu herramienta Git. No publiques el taller que originó este paquete.
-
-## Comprobar
+## Verify the repository
 
 ```text
 python -m unittest discover -s scripts -p "test_*.py"
 ```
 
-Para la suite completa, instala también las dependencias opcionales de extracción. Los tests usan datos sintéticos en carpetas temporales. Las instrucciones del skill están en inglés y esta guía en español; los entregables usan el idioma del propietario. [Licencia y atribuciones](THIRD_PARTY_NOTICES.md).
+For the full suite, install the optional extraction dependencies. Tests use synthetic data in temporary folders. [License and credits](THIRD_PARTY_NOTICES.md).

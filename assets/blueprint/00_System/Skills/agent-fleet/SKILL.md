@@ -35,3 +35,5 @@ Record prepared source, host installation, observed loading, task application an
 Before consolidating roles, inventory actual manual work, live triggers, in-flight cases, unique records, access and delegated rights. Preserve recoverable predecessors. Prove that the authorized successor can load the method and carry the real obligation, then record one dated handoff of ownership. Keep the current owner responsible until that cutover. If the successor misses a material function, pause new external effects, reconcile work already done and restore the last verified owner through approved controls.
 
 Close with the owning record and checkable outcome. Shared skills can be adopted one task at a time. Activating an agent, changing a schedule or moving decision rights requires its own authority.
+
+For the owner's first handoff, start with a real task and record where its result belongs. Confirm that the receiving role can read the saved result and describe the next action. If the result is missing or access is uncertain, reconcile the receiving side before any retry.

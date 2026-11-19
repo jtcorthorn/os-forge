@@ -26,6 +26,8 @@ class FirstBuildTests(unittest.TestCase):
                 self.assertEqual(verified['locally_modified'], [])
                 entry = (root / 'EMPIEZA_AQUI.md').read_text(encoding='utf-8')
                 self.assertIn('00_System/Skills/MAPA.md', entry)
+                self.assertIn('00_System/Skills/os-maintenance/SKILL.md', entry)
+                self.assertIn('00_System/Skills/agent-fleet/SKILL.md', entry)
                 fleet = (root / '00_System/Agents/FLEET.md').read_text(encoding='utf-8')
                 role_rows = [line for line in fleet.splitlines() if '(operators/' in line]
                 self.assertEqual(len(role_rows), 1)
@@ -58,6 +60,25 @@ class FirstBuildTests(unittest.TestCase):
             verified = forge.verify(root)
             self.assertTrue(verified['pass'], verified)
             self.assertIn('30_Projects/MAPA.md', verified['locally_modified'])
+
+    def test_selected_domains_keep_matching_routes_and_a_personalized_entry(self):
+        with tempfile.TemporaryDirectory(prefix='forge-first-') as folder:
+            root = Path(folder).resolve()
+            config = {
+                'owner': 'Example Owner',
+                'domains': {'30_Projects': 'Studio'},
+                'append': {'EMPIEZA_AQUI.md': '[Studio](30_Projects/MAPA.md)'},
+            }
+            self.assertTrue(forge.deploy(config, root, apply=True)['applied'])
+            self.assertFalse((root / '60_Travel').exists())
+            routes = (root / 'MAPA.md').read_text(encoding='utf-8')
+            self.assertIn('[Studio](30_Projects/MAPA.md)', routes)
+            self.assertNotIn('60_Travel', routes)
+            self.assertTrue((root / '30_Projects/MAPA.md').read_text(encoding='utf-8').startswith('# Studio\n'))
+            self.assertIn('[Studio]', (root / 'EMPIEZA_AQUI.md').read_text(encoding='utf-8'))
+            verified = forge.verify(root)
+            self.assertTrue(verified['pass'], verified)
+            self.assertTrue(forge.deploy(config, root, apply=True)['no_op'])
 
 
 if __name__ == '__main__':
