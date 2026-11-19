@@ -11,6 +11,9 @@ from urllib.parse import unquote
 
 FACTORY = Path(__file__).resolve().parents[1]
 VERSION = '1.0.0'
+STARTER_DOMAINS = ('10_Finances', '20_Ventures', '30_Projects', '40_Health',
+                   '50_Learning', '60_Travel', '70_Records', '80_Library', '90_Archive')
+DOMAIN_LINK = re.compile(r'\[([^\]]+)\]\((\d{2}_[A-Za-z]+)/MAPA\.md\)')
 
 def blueprint_root():
     return FACTORY / 'assets' / 'blueprint'
@@ -27,8 +30,27 @@ def contained(root, relative):
 def read_json(path, fallback):
     return json.loads(path.read_text(encoding='utf-8-sig')) if path.exists() else fallback
 
+def render_domain_routes(text, domains):
+    lines = []
+    for line in text.splitlines(keepends=True):
+        link = DOMAIN_LINK.search(line)
+        if link and link[2] in STARTER_DOMAINS:
+            if link[2] not in domains:
+                continue
+            line = line[:link.start(1)] + domains[link[2]] + line[link.end(1):]
+        lines.append(line)
+    return ''.join(lines)
+
 def render(config):
     blueprint = blueprint_root()
+    domains = config.get('domains')
+    if domains is not None:
+        if not isinstance(domains, dict) or set(domains) - set(STARTER_DOMAINS):
+            raise ValueError('domains must map starter domain folders to display names')
+        if any(not isinstance(label, str) or not label.strip() or re.search(r'[\[\]|\\\r\n]', label)
+               for label in domains.values()):
+            raise ValueError('Each domain display name must fit on one Markdown table row')
+
     result = {}
     for path in sorted(blueprint.rglob('*')):
         if not path.is_file():
@@ -39,11 +61,18 @@ def render(config):
         if path.suffix.lower() in {'.pyc', '.pyo'}:
             continue
         relative = path.relative_to(blueprint).as_posix()
+        area = path.relative_to(blueprint).parts[0]
+        if domains is not None and area in STARTER_DOMAINS and area not in domains:
+            continue
         data = path.read_bytes()
         if path.suffix.lower() in {'.md', '.txt', '.json', '.yaml', '.yml'}:
             text = data.decode('utf-8-sig').replace('{{OWNER}}', config['owner'])
             if '{{OWNER}}' in text:
                 raise ValueError(f'Unresolved owner token: {relative}')
+            if domains is not None and relative == 'MAPA.md':
+                text = render_domain_routes(text, domains)
+            elif domains is not None and area in domains and relative == f'{area}/MAPA.md':
+                text = re.sub(r'^# [^\n]+', lambda _: f'# {domains[area]}', text, count=1)
             data = text.encode('utf-8')
         result[relative] = data
     entry_language = config.get('entry_language', 'es')
@@ -169,8 +198,7 @@ def verify(target):
     manifest = read_json(target / '_meta/forge-manifest.json', {'files': {}})
     missing, modified, broken, unresolved, long_maps, external = [], [], [], [], [], []
     # Only generated/current OS documentation, never text hidden in recipient original folders.
-    roots = [target / p for p in ('00_System','10_Finances','20_Ventures','30_Projects',
-             '40_Health','50_Learning','60_Travel','70_Records','80_Library','90_Archive','_templates','_inbox')]
+    roots = [target / p for p in ('00_System', *STARTER_DOMAINS, '_templates', '_inbox')]
     docs = [p for p in target.glob('*.md')]
     docs += [p for root in roots if root.exists() for p in root.rglob('*.md')]
     for rel, item in manifest['files'].items():

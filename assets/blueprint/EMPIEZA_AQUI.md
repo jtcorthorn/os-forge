@@ -19,7 +19,8 @@ Puedes empezar con un solo asistente y pocos archivos. Los roles preparados y la
 - Nueva capacidad: consulta [skills](00_System/Skills/MAPA.md). Estar en la biblioteca no significa estar instalado en tu aplicación.
 - Trabajar con tu asistente de IA. Elige el [método](00_System/Skills/MAPA.md) según la tarea y carga el contexto del dominio. Usa [las rutas de agentes](00_System/Agents/MAPA.md) si necesitas juicio especializado, un mandato separado o delegar trabajo.
 - Continuar otro día: pide dejar un checkpoint con objetivo, avances, permisos y siguiente acción.
-- Mejorar el OS: plantea la fricción al [método de mantenimiento](00_System/Workshop/CONTEXT.md).
+- Revisar el OS: «Usa el [playbook de mantenimiento](00_System/Skills/os-maintenance/SKILL.md) para comprobar que las rutas y los traspasos de mi proyecto funcionan. Dime qué verificaste y quién puede resolver cada hallazgo».
+- Repartir trabajo: «Usa [Agent Fleet](00_System/Skills/agent-fleet/SKILL.md) para proponer quién se encarga de esta tarea, qué acceso necesita y cómo verificamos la entrega».
 
 Las áreas sin información están preparadas para crecer. No contienen supuestos sobre tu vida.
 Las conexiones, automatizaciones y agentes externos requieren configuración en tu station.

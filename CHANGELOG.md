@@ -2,6 +2,11 @@
 
 Only verified, reusable product changes belong here. Repository changes do not imply installation or activation in an owner's existing OS.
 
+## Guided setup
+
+- Propose a starting OS and ask about areas, existing folders, access and the first task. Deploy selected starter areas with owner-chosen labels and leave a personalized guide in the OS.
+- Link Agent Fleet and the maintenance playbook from each language's entry guide. Check source routes and receiving-side handoffs, record deliberate local conventions and rehearse recovery in isolation.
+
 ## 2026-11-07
 
 - Start new builds with one general assistant that loads shared skills directly. Register dedicated agents for assigned responsibilities and verify real work and boundaries before transferring ownership.

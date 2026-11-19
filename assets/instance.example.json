@@ -2,5 +2,10 @@
   "owner": "Example",
   "entry_language": "es",
   "external_intake": false,
+  "domains": {
+    "20_Ventures": "Empresas",
+    "30_Projects": "Proyectos",
+    "80_Library": "Biblioteca"
+  },
   "append": {}
 }
